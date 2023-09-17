@@ -1,47 +1,18 @@
-h1{
-    margin: 0;
-}
-
-.header{
-    display: flex;
-}
-
-.welcome{
-    margin: 0px !important;
-    text-align: center;
-    font-size: 64px;
-    height: 20vh;
-    color: red;
-}
-
+/*General Elements*/
 body{
     background-color: #011120;
     margin: 0;
 }
 
-#snickers_porch{
-    width: 48vh;
-    padding-left: 15vw;
+h1{
+    margin: 0;
 }
 
-#jamaica{
-    width: 24vh;
-    float: right;
-    justify-content: right;
+h3{
+    margin: 0px;
 }
 
-.vh20{
-    height: 10vh;
-}
-
-.intro{
-    color: red;
-    margin-top: 2vw;
-    margin-left: 5vw;
-    margin-right: 10vw;
-    font-size: 2.5vw;
-    min-height: 3vw;
-}
+/*Button Styling*/
 
 .button-header{
     display: flex;
@@ -49,15 +20,22 @@ body{
 }
 
 .button{
-    margin: 5vh 5vw 5vh 5vw;
+    margin: 10px 15px 10px 15px;
     background-color: #011120;
     color: red;
     border-color: red;
     text-align: center;
-    font-size: 16px;
-    padding: 5px;
+    font-size: 16px !important;
+    padding: 8px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition: 0.5s;
+}
+
+.button:hover{
+    background-color: #030b13;
+    color: rgb(148, 0, 0);
+    border-color: rgb(148, 0, 0);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .button span {
@@ -65,7 +43,7 @@ body{
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
+}
 
 .button span:after {
     content: '\00bb';
@@ -74,27 +52,72 @@ body{
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-
-  .button:hover span {
-    padding-right: 25px;
-  }
-
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-
-.button:hover{
-    margin: 5vh 5vw 5vh 5vw;
-    background-color: #030b13;
-    color: red;
-    border-color: rgb(148, 0, 0);
-    text-align: center;
-    font-size: 16px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-h3{
-    margin: 0px;
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*General*/
+.header{
+    display: flex;
+}
+
+.div-br{
+    height: 10vh;
+}
+
+.welcome{
+    margin: 0px !important;
+    text-align: center;
+    font-size: 7vh;
+    color: red;
+}
+
+.welcome-text{
+    font-size: 150%;
+}
+
+.intro{
+    color: red;
+    margin-top: 2vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 3vw;
+}
+
+.snickers_porch{
+    width: 30%;
+}
+
+/*Index*/
+.index-text{
+    font-size: 2.5vw;
+}
+
+.index-snickers{
+    padding-left: 8%;
+}
+
+/*About Me*/
+.about-me-text-left{
+    font-size: 1vw;
+    
+}
+
+.about-me-text-right{
+    font-size: 1vw;
+}
+
+.about-me-snickers-left{
+    padding-left: 5%;
+}
+
+.about-me-snickers-right{
+    padding-right: 5%;
 }
