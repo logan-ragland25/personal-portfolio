@@ -4,12 +4,8 @@ body{
     margin: 0;
 }
 
-h1{
+h1, h2, h3{
     margin: 0;
-}
-
-h3{
-    margin: 0px;
 }
 
 /*Button Styling*/
@@ -19,12 +15,14 @@ h3{
 }
 
 .button{
-    margin: 10px 15px 10px 15px;
+    margin: 5vh 5vw 5vh 5vw;
     background-color: #011120;
     color: red;
     border-color: red;
+    border-radius: 10px;
+    border-width: 5px;
     text-align: center;
-    font-size: 16px !important;
+    font-size: 200% !important;
     padding: 8px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition: 0.5s;
@@ -63,7 +61,7 @@ h3{
 }
 
 /*General*/
-.header{
+.info-div{
     display: flex;
 }
 
@@ -74,7 +72,7 @@ h3{
 .welcome{
     margin: 0px !important;
     text-align: center;
-    font-size: 7vh;
+    font-size: 64px;
     color: red;
 }
 
@@ -87,16 +85,35 @@ h3{
     margin-top: 2vw;
     margin-left: 10%;
     margin-right: 10%;
-    min-height: 3vw;
+    min-height: 5rem;
+    min-width: 20rem;
 }
 
 .snickers_porch{
-    width: 30%;
+    height: 25vw;
+    max-width: 100%;
+    min-height: fit-content;
+    min-width: 40%;
+}
+
+.topic{
+    color: rgb(190, 39, 39);
+    font-size: 3vw;
+    min-width: 10rem;
+    min-height: auto;
+    margin-top: 0;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Index*/
 .index-text{
-    font-size: 2.5vw;
+    font-size: 32px;
 }
 
 .index-snickers{
@@ -104,12 +121,11 @@ h3{
 }
 
 /*About Me*/
-.about-me-text-left{
-    font-size: 1vw;
-    
+.about-me-text{
+    font-size: 1.6vw;
 }
 
-.about-me-text-right{
+.about-me-text-2{
     font-size: 1vw;
 }
 
@@ -120,3 +136,40 @@ h3{
 .about-me-snickers-right{
     padding-right: 5%;
 }
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #011120;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'monospace, verdana, helvetica';
+    border-color: red;
+    border-width: 3px;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
