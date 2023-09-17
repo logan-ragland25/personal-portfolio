@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/scripts/actions.js"></script>
     <title>Logan Ragland's Portfolio</title>
 </head>
     <body>
+        <div class="welcome">
+            <h1>Welcome!</h1>
+        </div>
+        <div class="vh20"></div>
         <div class = "header">
             <div>
                 <img id="snickers_porch" src="images/Logan_Snickers_Cary_Porch.jpg">
             </div>
             <div>
-                <h1 id="welcome">Welcome!</h1>
+                <h3 class="intro">My name is Logan Ragland. I'm an aspiring coder and game developer. If you want to see my work and all the awesome projects I've worked on, you're in the right place!</h3>
             </div>
-            <div>
-                <img id="jamaica" src="images/Logan_Jamaica_Beach.jpg">
-            </div>
+        </div>
+        <div class="button-header">
+            <button class="button" onclick="window.location.href='about-me.html';"><span>About Me </span></button>
+            <button class="button" onclick="window.location.href='portfolio.html';"><span>Portfolio </span></button>
+            <button class="button" onclick="window.location.href='contact-me.html';"><span>Contact Me </span></button>
         </div>
     </body>
 </html>
